@@ -1,14 +1,16 @@
-# Spryker Commerce OS
+# PublishAndSynchronizeHealthCheck Module
+[![Latest Stable Version](https://poser.pugx.org/spryker/publish-and-synchronize-health-check/v/stable.svg)](https://packagist.org/packages/spryker/publish-and-synchronize-health-check)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.3-8892BF.svg)](https://php.net/)
 
-## Core Modules
+Publish and synchronize health check module provides basic health checks and reporting tools for system availability.
+Holds HealthCheck Plugin to create or update entity in the database
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/spryker/spryker-core/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/spryker/spryker-core/?branch=master)
-[![Minimum PHP Version](http://img.shields.io/badge/php-%3E%3D%207.3-8892BF.svg)](https://php.net/)
+## Installation
 
-### Links
-- **[Spryker Documentation](https://academy.spryker.com/)**
-- [Spryker Architecture-Sniffer](https://github.com/spryker/architecture-sniffer)
-- [Spryker Code-Sniffer](https://github.com/spryker/code-sniffer)
-- [Spryker Code-Generator](https://github.com/spryker/code-generator)
+```
+composer require spryker/publish-and-synchronize-health-check
+```
 
+## Documentation
 
+[Spryker Documentation](https://academy.spryker.com/developing_with_spryker/module_guide/modules.html)
