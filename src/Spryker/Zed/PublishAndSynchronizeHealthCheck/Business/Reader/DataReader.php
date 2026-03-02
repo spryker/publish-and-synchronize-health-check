@@ -18,9 +18,6 @@ class DataReader implements DataReaderInterface
      */
     protected $publishAndSynchronizeHealthCheckRepository;
 
-    /**
-     * @param \Spryker\Zed\PublishAndSynchronizeHealthCheck\Persistence\PublishAndSynchronizeHealthCheckRepositoryInterface $publishAndSynchronizeHealthCheckRepository
-     */
     public function __construct(PublishAndSynchronizeHealthCheckRepositoryInterface $publishAndSynchronizeHealthCheckRepository)
     {
         $this->publishAndSynchronizeHealthCheckRepository = $publishAndSynchronizeHealthCheckRepository;

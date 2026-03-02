@@ -16,9 +16,6 @@ use Spryker\Zed\PublishAndSynchronizeHealthCheck\PublishAndSynchronizeHealthChec
  */
 class PublishAndSynchronizeHealthCheckEntityManager extends AbstractEntityManager implements PublishAndSynchronizeHealthCheckEntityManagerInterface
 {
-    /**
-     * @return \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer
-     */
     public function upsertPublishAndSynchronizeHealthCheckEntity(): PublishAndSynchronizeHealthCheckTransfer
     {
         $publishAndSynchronizeHealthCheckEntity = $this->getFactory()

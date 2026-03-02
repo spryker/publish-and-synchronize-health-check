@@ -41,9 +41,6 @@ class PublishAndSynchronizeHealthCheckFacadeTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testCreateOrUpdatePublishAndSynchronizeHealthCheckEntityCreatesEntity(): void
     {
         // Arrange
@@ -57,9 +54,6 @@ class PublishAndSynchronizeHealthCheckFacadeTest extends Unit
         $this->assertNotNull($publishAndSynchronizeHealthCheckTransfer->getUpdatedAt());
     }
 
-    /**
-     * @return void
-     */
     public function testGetPublishAndSynchronizeHealthCheckCollectionWhileNoCriteriaMatched(): void
     {
         // Arrange
@@ -76,9 +70,6 @@ class PublishAndSynchronizeHealthCheckFacadeTest extends Unit
         $this->assertCount(0, $publishAndSynchronizeHealthCheckCollectionTransfer->getPublishAndSynchronizeHealthChecks());
     }
 
-    /**
-     * @return void
-     */
     public function testGetPublishAndSynchronizeHealthCheckCollectionWithOnePublishAndSynchronizeHealthCheckWhilePublishAndSynchronizeHealthCheckCriteriaMatched(): void
     {
         // Arrange
@@ -102,9 +93,6 @@ class PublishAndSynchronizeHealthCheckFacadeTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testGetPublishAndSynchronizeHealthCheckCollectionWithFivePublishAndSynchronizeHealthChecksWhileHavingLimitOffsetPaginationApplied(): void
     {
         // Arrange
@@ -126,9 +114,6 @@ class PublishAndSynchronizeHealthCheckFacadeTest extends Unit
         $this->assertSame(4, $assetCollectionTransfer->getPagination()->getNbResults());
     }
 
-    /**
-     * @return \Spryker\Zed\PublishAndSynchronizeHealthCheck\Business\PublishAndSynchronizeHealthCheckFacadeInterface
-     */
     protected function getFacade(): PublishAndSynchronizeHealthCheckFacadeInterface
     {
         /** @var \Spryker\Zed\PublishAndSynchronizeHealthCheck\Business\PublishAndSynchronizeHealthCheckFacadeInterface $publishAndSynchronizeHealthCheckFacade */

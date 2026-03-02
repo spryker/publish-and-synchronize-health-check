@@ -19,11 +19,6 @@ use Spryker\Zed\Kernel\Persistence\AbstractRepository;
  */
 class PublishAndSynchronizeHealthCheckRepository extends AbstractRepository implements PublishAndSynchronizeHealthCheckRepositoryInterface
 {
-    /**
-     * @param string $key
-     *
-     * @return \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer|null
-     */
     public function findPublishAndSynchronizeHealthCheckByKey(string $key): ?PublishAndSynchronizeHealthCheckTransfer
     {
         $publishAndSynchronizeHealthCheckEntity = $this->getFactory()
@@ -38,11 +33,6 @@ class PublishAndSynchronizeHealthCheckRepository extends AbstractRepository impl
         return (new PublishAndSynchronizeHealthCheckTransfer())->fromArray($publishAndSynchronizeHealthCheckEntity->toArray(), true);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckCriteriaTransfer $publishAndSynchronizeHealthCheckCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckCollectionTransfer
-     */
     public function getPublishAndSynchronizeHealthCheckCollection(
         PublishAndSynchronizeHealthCheckCriteriaTransfer $publishAndSynchronizeHealthCheckCriteriaTransfer
     ): PublishAndSynchronizeHealthCheckCollectionTransfer {
@@ -71,12 +61,6 @@ class PublishAndSynchronizeHealthCheckRepository extends AbstractRepository impl
             );
     }
 
-    /**
-     * @param \Orm\Zed\PublishAndSynchronizeHealthCheck\Persistence\SpyPublishAndSynchronizeHealthCheckQuery $publishAndSynchronizeHealthCheckQuery
-     * @param \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckCriteriaTransfer $publishAndSynchronizeHealthCheckCriteriaTransfer
-     *
-     * @return \Orm\Zed\PublishAndSynchronizeHealthCheck\Persistence\SpyPublishAndSynchronizeHealthCheckQuery
-     */
     protected function applyPublishAndSynchronizeHealthCheckFilters(
         SpyPublishAndSynchronizeHealthCheckQuery $publishAndSynchronizeHealthCheckQuery,
         PublishAndSynchronizeHealthCheckCriteriaTransfer $publishAndSynchronizeHealthCheckCriteriaTransfer
@@ -96,12 +80,6 @@ class PublishAndSynchronizeHealthCheckRepository extends AbstractRepository impl
         return $publishAndSynchronizeHealthCheckQuery;
     }
 
-    /**
-     * @param \Orm\Zed\PublishAndSynchronizeHealthCheck\Persistence\SpyPublishAndSynchronizeHealthCheckQuery $publishAndSynchronizeHealthCheckQuery
-     * @param \Generated\Shared\Transfer\PaginationTransfer $paginationTransfer
-     *
-     * @return \Orm\Zed\PublishAndSynchronizeHealthCheck\Persistence\SpyPublishAndSynchronizeHealthCheckQuery
-     */
     protected function applyPublishAndSynchronizeHealthCheckPagination(
         SpyPublishAndSynchronizeHealthCheckQuery $publishAndSynchronizeHealthCheckQuery,
         PaginationTransfer $paginationTransfer

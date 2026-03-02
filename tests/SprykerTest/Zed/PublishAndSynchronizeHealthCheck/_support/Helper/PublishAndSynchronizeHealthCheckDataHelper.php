@@ -20,19 +20,11 @@ class PublishAndSynchronizeHealthCheckDataHelper extends AbstractHelper
     use BusinessHelperTrait;
     use DataCleanupHelperTrait;
 
-    /**
-     * @param \Codeception\TestInterface $test
-     *
-     * @return void
-     */
     public function _before(TestInterface $test): void
     {
         SpyPublishAndSynchronizeHealthCheckQuery::create()->find()->delete();
     }
 
-    /**
-     * @return \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer
-     */
     public function havePublishAndSynchronizeHealthCheck(): PublishAndSynchronizeHealthCheckTransfer
     {
         $publishAndSynchronizeHealthCheckTransfer = $this->getFacade()->savePublishAndSynchronizeHealthCheckEntity();
@@ -50,9 +42,6 @@ class PublishAndSynchronizeHealthCheckDataHelper extends AbstractHelper
         return $publishAndSynchronizeHealthCheckTransfer;
     }
 
-    /**
-     * @return \Spryker\Zed\PublishAndSynchronizeHealthCheck\Business\PublishAndSynchronizeHealthCheckFacadeInterface
-     */
     protected function getFacade(): PublishAndSynchronizeHealthCheckFacadeInterface
     {
         /** @var \Spryker\Zed\PublishAndSynchronizeHealthCheck\Business\PublishAndSynchronizeHealthCheckFacadeInterface $publishAndSynchronizeHealthCheckFacade */

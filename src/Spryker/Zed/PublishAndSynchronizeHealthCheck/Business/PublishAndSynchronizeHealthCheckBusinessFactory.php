@@ -20,17 +20,11 @@ use Spryker\Zed\PublishAndSynchronizeHealthCheck\Business\Writer\DataWriterInter
  */
 class PublishAndSynchronizeHealthCheckBusinessFactory extends AbstractBusinessFactory
 {
-    /**
-     * @return \Spryker\Zed\PublishAndSynchronizeHealthCheck\Business\Reader\DataReaderInterface
-     */
     public function createPublishAndSynchronizeHealthCheckDataReader(): DataReaderInterface
     {
         return new DataReader($this->getRepository());
     }
 
-    /**
-     * @return \Spryker\Zed\PublishAndSynchronizeHealthCheck\Business\Writer\DataWriterInterface
-     */
     public function createPublishAndSynchronizeHealthCheckDataWriter(): DataWriterInterface
     {
         return new DataWriter($this->getEntityManager());

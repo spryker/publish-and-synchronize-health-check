@@ -11,11 +11,6 @@ use Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer;
 
 interface DataReaderInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer $publishAndSynchronizeHealthCheckTransfer
-     *
-     * @return \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer
-     */
     public function getPublishAndSynchronizeHealthCheckTransfer(
         PublishAndSynchronizeHealthCheckTransfer $publishAndSynchronizeHealthCheckTransfer
     ): PublishAndSynchronizeHealthCheckTransfer;

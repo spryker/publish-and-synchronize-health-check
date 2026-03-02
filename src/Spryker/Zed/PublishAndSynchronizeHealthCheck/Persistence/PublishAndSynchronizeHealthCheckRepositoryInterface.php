@@ -13,18 +13,8 @@ use Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer;
 
 interface PublishAndSynchronizeHealthCheckRepositoryInterface
 {
-    /**
-     * @param string $key
-     *
-     * @return \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer|null
-     */
     public function findPublishAndSynchronizeHealthCheckByKey(string $key): ?PublishAndSynchronizeHealthCheckTransfer;
 
-    /**
-     * @param \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckCriteriaTransfer $publishAndSynchronizeHealthCheckCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckCollectionTransfer
-     */
     public function getPublishAndSynchronizeHealthCheckCollection(
         PublishAndSynchronizeHealthCheckCriteriaTransfer $publishAndSynchronizeHealthCheckCriteriaTransfer
     ): PublishAndSynchronizeHealthCheckCollectionTransfer;

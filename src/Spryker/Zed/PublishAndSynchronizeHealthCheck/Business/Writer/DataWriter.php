@@ -17,17 +17,11 @@ class DataWriter implements DataWriterInterface
      */
     protected $publishAndSynchronizeHealthCheckEntityManager;
 
-    /**
-     * @param \Spryker\Zed\PublishAndSynchronizeHealthCheck\Persistence\PublishAndSynchronizeHealthCheckEntityManagerInterface $publishAndSynchronizeHealthCheckEntityManager
-     */
     public function __construct(PublishAndSynchronizeHealthCheckEntityManagerInterface $publishAndSynchronizeHealthCheckEntityManager)
     {
         $this->publishAndSynchronizeHealthCheckEntityManager = $publishAndSynchronizeHealthCheckEntityManager;
     }
 
-    /**
-     * @return \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer
-     */
     public function savePublishAndSynchronizeHealthCheckEntity(): PublishAndSynchronizeHealthCheckTransfer
     {
         return $this->publishAndSynchronizeHealthCheckEntityManager->upsertPublishAndSynchronizeHealthCheckEntity();

@@ -32,11 +32,6 @@ class PublishAndSynchronizeHealthCheckBusinessTester extends Actor
 {
     use _generated\PublishAndSynchronizeHealthCheckBusinessTesterActions;
 
-    /**
-     * @param array $override
-     *
-     * @return \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer
-     */
     public function createPublishAndSynchronizeHealthCheck(array $override = []): PublishAndSynchronizeHealthCheckTransfer
     {
         $publishAndSynchronizeHealthCheckTransfer = (new PublishAndSynchronizeHealthCheckBuilder($override))->build();

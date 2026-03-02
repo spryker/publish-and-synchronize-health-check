@@ -11,8 +11,5 @@ use Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer;
 
 interface DataWriterInterface
 {
-    /**
-     * @return \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer
-     */
     public function savePublishAndSynchronizeHealthCheckEntity(): PublishAndSynchronizeHealthCheckTransfer;
 }

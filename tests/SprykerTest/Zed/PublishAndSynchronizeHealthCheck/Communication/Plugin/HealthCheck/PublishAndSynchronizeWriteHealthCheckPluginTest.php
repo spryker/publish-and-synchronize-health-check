@@ -31,18 +31,12 @@ class PublishAndSynchronizeWriteHealthCheckPluginTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testGetNamePublishAndSynchronizeWriteHealthCheckPlugin(): void
     {
         $publishAndSynchronizeWriteHealthCheckPlugin = new PublishAndSynchronizeWriteHealthCheckPlugin();
         $this->assertNotNull($publishAndSynchronizeWriteHealthCheckPlugin->getName());
     }
 
-    /**
-     * @return void
-     */
     public function testCheckReturnsSuccessfulHealthCheckResponse(): void
     {
         $publishAndSynchronizeHealthCheckTransfer = new PublishAndSynchronizeHealthCheckTransfer();
@@ -58,9 +52,6 @@ class PublishAndSynchronizeWriteHealthCheckPluginTest extends Unit
         $this->assertTrue($healthCheckServiceResponseTransfer->getStatus());
     }
 
-    /**
-     * @return void
-     */
     public function testCheckReturnsFailedHealthCheckResponse(): void
     {
         $publishAndSynchronizeHealthCheckTransfer = new PublishAndSynchronizeHealthCheckTransfer();

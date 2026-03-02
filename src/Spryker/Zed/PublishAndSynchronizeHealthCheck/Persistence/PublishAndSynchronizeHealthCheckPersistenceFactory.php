@@ -18,17 +18,11 @@ use Spryker\Zed\PublishAndSynchronizeHealthCheck\Persistence\Propel\Mapper\Publi
  */
 class PublishAndSynchronizeHealthCheckPersistenceFactory extends AbstractPersistenceFactory
 {
-    /**
-     * @return \Orm\Zed\PublishAndSynchronizeHealthCheck\Persistence\SpyPublishAndSynchronizeHealthCheckQuery
-     */
     public function createPublishAndSynchronizeHealthCheckQuery(): SpyPublishAndSynchronizeHealthCheckQuery
     {
         return SpyPublishAndSynchronizeHealthCheckQuery::create();
     }
 
-    /**
-     * @return \Spryker\Zed\PublishAndSynchronizeHealthCheck\Persistence\Propel\Mapper\PublishAndSynchronizeHealthCheckMapper
-     */
     public function createPublishAndSynchronizeHealthCheckMapper(): PublishAndSynchronizeHealthCheckMapper
     {
         return new PublishAndSynchronizeHealthCheckMapper();

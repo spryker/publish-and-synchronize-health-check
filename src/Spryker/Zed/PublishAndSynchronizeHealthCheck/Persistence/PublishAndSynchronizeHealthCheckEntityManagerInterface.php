@@ -11,8 +11,5 @@ use Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer;
 
 interface PublishAndSynchronizeHealthCheckEntityManagerInterface
 {
-    /**
-     * @return \Generated\Shared\Transfer\PublishAndSynchronizeHealthCheckTransfer
-     */
     public function upsertPublishAndSynchronizeHealthCheckEntity(): PublishAndSynchronizeHealthCheckTransfer;
 }
