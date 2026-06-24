@@ -12,6 +12,8 @@ use Spryker\Shared\Kernel\AbstractBundleConfig;
 class PublishAndSynchronizeHealthCheckConfig extends AbstractBundleConfig
 {
     /**
+     * @api
+     *
      * Defines queue name for processing publish.
      *
      * @var string
@@ -19,6 +21,8 @@ class PublishAndSynchronizeHealthCheckConfig extends AbstractBundleConfig
     public const PUBLISH_PUBLISH_AND_SYNCHRONIZE_HEALTH_CHECK = 'publish.publish_and_synchronize_health_check';
 
     /**
+     * @api
+     *
      * Defines resource name, that will be used for key generation.
      *
      * @var string

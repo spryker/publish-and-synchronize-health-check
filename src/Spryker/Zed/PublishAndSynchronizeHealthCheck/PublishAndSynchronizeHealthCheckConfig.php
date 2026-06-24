@@ -12,6 +12,8 @@ use Spryker\Zed\Kernel\AbstractBundleConfig;
 class PublishAndSynchronizeHealthCheckConfig extends AbstractBundleConfig
 {
     /**
+     * @api
+     *
      * @var string
      */
     public const DEFAULT_HEALTH_CHECK_KEY = 'health-check';
